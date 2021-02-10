@@ -1,5 +1,6 @@
 # Spring + Docker
 
+- 2020-12-20
 - Spring Framework
 - Spring Boot
 - Spring Data JPA

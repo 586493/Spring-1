@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="MS" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Category - details</title>
+        <link rel="stylesheet" href="/css/w3.css">
+        <link rel="stylesheet" href="/css/my.css">
+        <script type="module" src="/js/load.js" defer="defer"></script>
+        <script type="module" src="/js/categoryDetails.js" defer="defer"></script>
+    </head>
+
+    <body class="w3-sand">
+        <div class="w3-card-4 w3-margin w3-khaki">
+            <div id="nav"></div>
+            <div class="w3-container w3-padding-16">
+
+                <table id="list-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <strong>Category - details</strong>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>attribute</th>
+                            <th>value</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabBody">
+                    </tbody>
+                </table>
+
+                <table id="list-table-2">
+                    <thead>
+                        <tr>
+                            <th colspan="4">
+                                <strong>Category - books</strong>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>name</th>
+                            <th>details</th>
+                            <th>edit</th>
+                            <th>delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabBody2">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">
+                                <button onclick="window.location.href = '/book/add.html'" id="newBookBtn">
+                                    new book
+                                </button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+
+            </div>
+        </div>
+    </body>
+
+</html>

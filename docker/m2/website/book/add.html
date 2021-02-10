@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="MS" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add book</title>
+        <link rel="stylesheet" href="/css/w3.css">
+        <link rel="stylesheet" href="/css/my.css">
+        <script type="module" src="/js/load.js" defer="defer"></script>
+        <script type="module" src="/js/addBook.js" defer="defer"></script>
+    </head>
+
+    <body class="w3-sand">
+        <div class="w3-card-4 w3-margin w3-khaki">
+            <div id="nav"></div>
+            <div class="w3-container w3-padding-16">
+                <strong>New book</strong><br>
+
+                <form class="w3-container w3-margin w3-padding-16" id="form">
+
+                    <label for="title">title</label>
+                    <input class="w3-input w3-margin w3-border" type="text" id="title" required>
+
+                    <label for="authorId">authorId</label>
+                    <select class="w3-input w3-margin w3-border" id="authorId" required>
+                    </select>
+
+                    <label for="categoryId">categoryId</label>
+                    <select class="w3-input w3-margin w3-border" id="categoryId" required>
+                    </select>
+
+                    <label for="price">price</label>
+                    <input pattern="\d+\.\d\d" class="w3-input w3-margin w3-border"
+                        placeholder="e.g. 12.99, 20.00, 0.99" type="text" id="price" required>
+
+                    <label for="description">description</label>
+                    <input class="w3-input w3-margin w3-border" type="text" id="description" required>
+
+                    <label for="isbn">isbn</label>
+                    <input class="w3-input w3-margin w3-border" type="text" id="isbn" required>
+
+                    <label for="publicationYear">publicationYear</label>
+                    <input pattern="\d+" class="w3-input w3-margin w3-border" type="text" id="publicationYear" required>
+
+                    <label for="pages">pages</label>
+                    <input pattern="\d+" class="w3-input w3-margin w3-border" type="text" id="pages" required>
+
+                    <input type="submit" value="submit" class="w3-btn w3-orange w3-margin-top">
+
+                </form>
+
+            </div>
+        </div>
+    </body>
+
+</html>

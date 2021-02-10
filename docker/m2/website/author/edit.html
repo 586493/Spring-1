@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="MS" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit author</title>
+        <link rel="stylesheet" href="/css/w3.css">
+        <link rel="stylesheet" href="/css/my.css">
+        <script type="module" src="/js/load.js" defer="defer"></script>
+        <script type="module" src="/js/editAuthor.js" defer="defer"></script>
+    </head>
+
+    <body class="w3-sand">
+        <div class="w3-card-4 w3-margin w3-khaki">
+            <div id="nav"></div>
+            <div class="w3-container w3-padding-16">
+                <strong>Edit author</strong><br>
+
+                <form class="w3-container w3-margin w3-padding-16" id="form">
+
+                    <label for="authorName">name</label>
+                    <input class="w3-input w3-margin w3-border" type="text" id="authorName" name="name" required>
+
+                    <label for="authorBirthDate">birthdate</label>
+                    <input class="w3-input w3-margin w3-border" type="text" pattern="\d\d\d\d-[01]\d-[0123]\d"
+                        placeholder="format: yyyy-mm-dd (e.g. 2020-12-03)" id="authorBirthDate" name="birthDate"
+                        required>
+
+                    <label for="authorNationality">nationality</label>
+                    <input class="w3-input w3-margin w3-border" type="text" id="authorNationality" name="nationality"
+                        required>
+
+                    <input type="submit" value="submit" class="w3-btn w3-orange w3-margin-top">
+
+                </form>
+
+            </div>
+        </div>
+    </body>
+
+</html>

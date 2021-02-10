@@ -5,4 +5,5 @@
 - Spring Data JPA
 - Spring MVC
 - Tomcat
+- Nginx
 - Docker
